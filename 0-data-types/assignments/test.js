@@ -6,4 +6,4 @@
 //1. Create a set of variables that define an animal (age, height, name, etc...). Must be at least 6 variables.
 
 
-//2. Create a set of variables that define a vehicle. Must be at least 6 variables.
+//2. Create a set of variables that define a vehicle. Must be at least 6 variables
