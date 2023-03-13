@@ -3,6 +3,7 @@
 const string1 = "hello"
 const string2  = "goodbye"
 console.log(string1 + string2)
+
 // 2. Save the substring "Friend" from the string "Hello Friend"
 const greeting = "Hello Friend"
 console.log(greeting.slice(6,12))
@@ -31,19 +32,19 @@ const word20 = "is";
 const word21 = "and";
 const word22 = "also";
 const word23 = "like"; 
-I `${word23}``${word16}`alot `${word17}``${word22}``${word23}``${peace}`
+I `${word23}``${word16}` alot `${word17}``${word22}``${word23}``${peace}`
 // 4. Given the string of your full name get your initials.
 let fullName = "Dayana Senat"
 let initials = fullName[0] + fullName [7]
 // 5. Get the 5th character from the following string: 'Hello World'
 const greeting1 = 'Hello World'
-console.log(greeting1 =[""])
+console.log(greeting1 =[4])
 // 6. Find the index of the dash from 'Coding-Time!'
 const coding = 'Coding-Time!'
 console.log(coding.indexOf("-"))
 // 7. Write code to grab the final letter from a any string.
 const string = "string"
-const lastLetter = string[string.lenghth-1]
+const lastLetter = string[string.length-1]
 // 8. Write code to grab the first 3 letters from a string. 
 const letters = "string"
 console.log(letters[0])

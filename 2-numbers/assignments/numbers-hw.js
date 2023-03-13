@@ -5,20 +5,20 @@
 let f = 20
 // Half that value and re-assign it to the previous variable 
 let f = 20
-f -= 10
+f /= 2
 
 console.log(f)
 
 // Create two negative numbers, assign them to variables and subtract one from the other together 
 let p = -35
 let o = -29
-
+p -= 0
 console.log(p - o)
 
 // Create three numbers, assign them to variables and multiply them together 
-const g = 44
-const t = 33
-const e = 2
+let g = 44
+let t = 33
+let e = 2
 g * t * e
 
 console.log(g * t * e)
@@ -34,7 +34,7 @@ console.log(t/q)
 // Create two odd numbers, assign them to variables and find the remainder of dividing one by the other 
 let x = 55
 let y = 23
-x / y
+x % y
 
 // find the minimum value in a set of numbers: 10,20,30,40,50 
 Math.min(10,20,30,40,50)
@@ -44,7 +44,7 @@ Math.max(-1,-2,-3,-4,-5)
 
 // Create a variable and find it's remainder, if divided by 2
 let d = 8
-8 % 2
+d % 2
 
 // find the square root of 144 
 Math.sqrt(144)
