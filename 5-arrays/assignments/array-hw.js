@@ -36,7 +36,9 @@ console.log(`My favorite day of the week is ${myDay}`)
 //12.   Combine these two arrays together
 let phone = ['iphone', 'android']
 let laptop = ['MacBook', 'HP', 'Dell']
-console.log(phone + " " + laptop)
+new Arr = phone.concat(laptop)
+const newArr1 = [...phone, ...laptop]
+console.log(newArr1)
 //13.   Write a line of code to test if something is an array or not
 const favColors = ["pink", "red", "orange"];
 if(favColors === "blue", "red", "white"){

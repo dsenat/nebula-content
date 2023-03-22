@@ -1,9 +1,9 @@
 // // //1. Write a statement that checks if 2 and 'two' are equal
-2 == "two" 
+2 === "two" 
 console.log(2 == "two")
 // // //2. Write a statement that checks if '2' and 2 are loosely equal
-"2" != 2
-console.log("2" != 2)
+"2" == 2
+console.log("2" == 2)
 // // //3. Write a statement that checks if 14 and '14' are strictly equal
 14 === "14"
 console.log(14 === "14")
@@ -14,10 +14,10 @@ console.log(10 > -100)
 Math.round((4.4) === 4)
 console.log(Math.round((4.4) === 4))
 // // //6. Write a statement that checks if 10 is greater than or equal to 9.1 rounded up
-Math.ceil(Math.round((9.1) >= 10))
-console.log(Math.ceil(Math.round((9.1) >= 10)))
+10 >= (Math.round(9.1) 
+console.log(Math.round(9.1)
 // // //7. Write a statement that checks if 10 is greater than 2 and 3 is greater than 4
-10 > 2 && 3 > 4
+(10 > 2) && (3 > 4)
 console.log(10 > 2 && 3 > 4)
 // //   // 7.a Without changing any of the numbers, or their order. How do we make this print true?
 console.log(10 > 2 || 3 > 4)
@@ -33,13 +33,13 @@ const numMelons = 10
 
 if(numMelons === 1 || numMelons === 2){
     console.log("Looks like you like watermelon")
-}if(numMelons > 2){
+}else if(numMelons > 2){
     console.log("Thats a lot of watermelon")
-}if(numMelons > 5){
+}else if(numMelons > 5){
     console.log("Thats too many watermelon!")
-}if(numMelons > 10){
+}else if(numMelons > 10){
     console.log("You must be CRAZY for watermelon!")
-}if(numMelons > 15){
+}else(numMelons > 15){
     console.log("Did you have a coupon")
 }
 

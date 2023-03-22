@@ -1,0 +1,9 @@
+// Create a family of 5 including a dog!
+
+const family = {
+    husband: "55 years old",
+    wife: "Partner",
+    pet: "Dog",
+    daughter: true,
+    son: 2
+}

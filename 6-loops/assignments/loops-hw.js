@@ -1,8 +1,8 @@
 // // 1.   Declare a for loop that starts at 0, goes until 30, and increments by 1
 // //      Each loop it should log to the console 'the current index is _'
 
-for(let i = 0; i<=30; i++){
-    console.log("the current index is")
+for(let i = 0; i <= 30; i++){
+    console.log(`the current index is ${i}`)
 }
 
 
@@ -18,21 +18,19 @@ for(let i = 1; i <= 10; i += 2){
 // //      Loop over the array and log each celebrity's full name to the console.
 let top5 = ["Bryson Tiller", "Brent Faiyaz", "Summer Walker", "Jhene Aiko","Chris Brown"]
 for(let i = 0; i < top5.length; i++){
-    console.log(top5)
+    console.log(top5[i])
 }
 
 
 // 4.   Loop over your celebrity list and 
 //      If a celebrity's full name has an even number of characters log it to the console
-const evenNames = []
-
 for(let i = 0; i < top5.length; i++){
     const top = top5[i];
-    if(top5.length % 2 === 0){
+    if(top5[i].length % 2 === 0){
         evenNames.push(top);
     }
 } 
-console.log(evenNames)
+
 
 
 // 5.   Use the celebrity array for this question
@@ -40,8 +38,8 @@ console.log(evenNames)
 const firstNames = []
 
 for(let i = 0; i < top5.length; i++){
-    const name1 = top5[i] 
-firstNames.push(name1)
+    const name1 = top5[i].split('') 
+firstNames.push(name1[0])
 }
 console.log(firstNames)
 
@@ -56,31 +54,47 @@ console.log(lastNames)
 
 // 7.   Loop over the celebrity list and then loop through each name. 
 //      If a letter is a vowel, log it to the console
+const vowels =  "aeiou"
 for(let i = 0; i < top5.length; i++){
     const vowels = top5[i]
 
 for(let j = 0; j < top5.length; j++) {
     const letter = top5[j]
+    if(vowels includes.(letter)){
+        console.log(char)
+    }
 }
 }
 console.log(vowels,letter)
 // // 8.   Loop over the celebrity list and then loop through each name. 
 // //      If a letter is uppercase, log it to the console
-for(let i = 0; i < top5.length; i++)
+for(let i = 0; i < top5.length; i++){
+    const name = top5[i]
+    for (let j = 0; j < name.length; j++){
+        const char = name[j]
+    if(char === char.toUpperCase() && char !== '')
+    }
+}
 
 
 // // 9.   Convert your celebrity array to all caps and no spaces:
 // //      Ex:
 // //        Input:  ['Martha Stewart', 'David Beckham', etc..] 
 // //        Output: ['MARTHA-STEWART', 'DAVID-BECKHAM', etc..]
-im not sure
+
 
 
 // 10.  Index your array to find your favorite celebrity. 
 //      Save that name to a variable
 //      Loop over the array until you find that individual
 //      Log that name to the console and break out of the loop
-im not sure
+const fav = top5[0]
+for (let i = 0; i < celebs.length; i++){
+    if(fav === celebs[i]){
+        console.log(top5[i])
+        break;
+    }
+}
 
 
 //BONUS:
@@ -89,3 +103,10 @@ im not sure
 //      If an index is divisible by 3 log 'buzz'
 //      If an index is divisible by both 2 & 3, log 'fizz-buzz'
 //      Otherwise print the index to the console
+for(let i = 0; i <=30; i++){
+    if(i % 2 === 0 && i % 3 !== 0){
+        console.log(i, "fizz")
+    
+        }
+    }
+}
