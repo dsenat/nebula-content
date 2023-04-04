@@ -14,12 +14,16 @@ celeb["birthPlace"]  = "Kentucky",
 celeb["children"] = 2,
 celeb["label"] = "RCA Records",
 // 4.   Write a function that allows us to add or update 3 properties
-function add (){
-
+function add (obj, prop, val){
+    obj[prop]= val
 }
+addProperty(celeb,'children', 0)
+addProperty(celeb,'birthday','09/02/1964')
+addProperty(celeb, 'haircolor', 'Blac')
+
 
 
 // 5.   Using a loop - log all the celebrities properties to the console
 for(let key in celeb){
-console.log(key [celeb])
+console.log(celeb[key])
 }

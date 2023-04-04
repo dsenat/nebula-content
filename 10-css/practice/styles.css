@@ -1,0 +1,49 @@
+/*
+pink: FFA69E
+blue: B8F2E6
+orange:FF6201
+green: DEF6CA
+white: FFFFFF
+*/
+
+:root {
+    --pink: #FFA69E;
+    --blue: #B8F2E6;
+    --orange: #FF6201;
+    --green: #DEF6CA;
+    --white: #FFFF;
+}
+
+body {
+    background-color: var(--green);
+}
+
+
+.container {
+    height: 100;
+    width: 100;
+    display: grid;
+    background-color: var(--blue);
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 300px 300px;
+    place-content: center;
+    grid-template-areas:
+        "item1 item1 item1"
+        "item2 item2 item2";
+
+}
+
+.grid-item-1 {
+    height: 80px;
+    width: 80px;
+    background-color: var(--pink);
+    grid-area: "item1";
+}
+
+grid.item-2 {
+    width: 80px;
+    height: 80px;
+    background-color: var(--orange);
+    grid-area: "item2";
+
+}

@@ -37,3 +37,4 @@
 
     // 8. What is scope? Do you have a real-world example of something similar to scope?
 
+    background-color: #442d2d;

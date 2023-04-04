@@ -1,0 +1,23 @@
+body{
+    background-color: #333333;
+    color: #b5b5b5;
+    text-align: center;
+    font-family: helvetica;
+  }
+  /* setting rules for just the headers */
+  h1{
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid skyblue;
+  }
+  /* setting rules for one specific id */
+  #title{
+    height: 100px;
+    line-height: 100px;
+    color: purple;
+  }
+  /* setting rules for a group of elements that have a class name*/
+  .sectionHead{
+    color: rgb(0, 127, 136);
+    margin: 10px 20%
+  }

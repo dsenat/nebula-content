@@ -1,0 +1,32 @@
+.myForm {
+    width: 350px;
+    height: 200px;
+    background-color: #FDCFF3;
+    border: 1px solid #ccc;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Comic Sans MS";
+    font-size: 16px;
+    text-align: center;
+}
+
+
+* {
+    background-color: #D2D6EF;
+}
+
+
+.idCardLeft {
+    flex: 120px;
+}
+
+.idCardLeft img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
