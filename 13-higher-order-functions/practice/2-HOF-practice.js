@@ -22,8 +22,14 @@ Write a higher order function that calculates some features of a string
     stringInfo(capitals, 'Howdy Partner!') => 2
     stringInfo(nonLetters, 'Howdy Partner!') => 2                    */
 
-    function stringInfo(feature, str){
-        return feature(str)
+    function stringInfo(func, str){
+        let count = 0
+        for(let char of string){
+            if(func(char)){
+                count++
+            }
+        }
+        return count
       }
       
       function length(str){

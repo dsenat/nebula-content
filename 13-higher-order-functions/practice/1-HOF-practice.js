@@ -44,6 +44,10 @@ Write a function that takes in a string and performs some form of manipulation o
     modify(sarcastic, 'I really like running') => I ReAlLy lIkE RuNnIng
     modify(code, 'There is no cake') => Th-r- -s n- c-k-
 */
+function modify(func, string){
+    return func(string)
+}
+
 function yeller(str) {
     return str.toUpperCase()
 }
