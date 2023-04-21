@@ -20,15 +20,15 @@ Write a HOF to reduce all numbers in an array to the largest number */
 
 
 function largestNum(arr){
-    return arr.reduce((accumulator, currentValue)=> Math.max(accumulator, currentValue))
+    return arr.reduce((accumulator, currentValue) => Math.max(accumulator, currentValue))
 } 
 
 /* Question 4
 Write a HOF to find the oldest person in a group */
 const partyPeople = [{ name: 'John', age: 25 }, { name: 'Jordan', age: 18 }, { name: 'Frank', age: 50 }, { name: 'Anna', age: 12 }]
 
-function oldestPerson(people){
-    return people.reduce((oldest, current)=> {
+function oldest(arr){
+    return arr.reduce((oldest, current)=> {
         return(oldest.age > current.age) ? oldest : current
     })
 }

@@ -14,7 +14,7 @@ const zebra = new Animal ("Zebra", "neeeh", "grass", "Africa")
 const elephant = new Animal ("Elephant", "trumpet", "plants", "jungle")
 const goat = new Animal ("Goat","baaahh", "grass","mountains")
 makeNoise(); {
-  console.log(`${zebra.name}` + "makes a" + `${zebra.noise}` + "sound." )
+  console.log(`${this.name}` + "makes a" + `${this.noise}` + "sound." )
 }
 eatsWhat();{}
 livesWhere();{}
