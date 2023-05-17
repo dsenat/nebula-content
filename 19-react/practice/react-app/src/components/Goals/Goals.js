@@ -14,7 +14,13 @@ export default function Goals() {
         <input type = "text" value ={Goals} onChange = {(e)=>setGoals(e.target.value) } />
         <input type ="submit"/>
     </form>
-    <p>My Goals</p>
+    <div className ="Goals">
+        <ul>
+          <li>{Goals1}</li>
+          <li>{Goals2}</li>
+          <li>{Goals3}</li>
+        </ul>
+
     <Goals/>
   </div>
     

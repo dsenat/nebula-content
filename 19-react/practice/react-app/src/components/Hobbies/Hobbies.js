@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-export default function Hobbies() {
+export default function Hobbies(props) {
  const [Hobbies, setHobbies] = useState("")
 
  const handleSubmit = (e) => {
