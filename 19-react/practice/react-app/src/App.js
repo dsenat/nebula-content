@@ -6,7 +6,7 @@ import './App.css';
 // import Hobbies from "./components/Hobbies/Hobbies"
 // import Goals from "./components/Goals/Goals"
 // import GroceriesList from "./components/GroceriesList/GroceriesList"
-import IDcard from "./components/IDcard/IDcard"
+// import IDcard from "./components/IDcard/IDcard"
 
 function App() {
   return (
