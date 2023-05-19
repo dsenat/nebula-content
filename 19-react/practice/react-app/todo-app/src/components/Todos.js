@@ -8,9 +8,6 @@ export default function Todo({todos, completeTodo, removeTodo, updateTodo}){
         id: null, value: ""
     })
 
-    const updateTodo = (todoId, newValue) =>{
-        setTodos(prev => prev.map(item =>(item.id === todoId ? newValue: item)))
-    }
 
         if(edit.id){
             return <TodoForm onSubmit={submitUpdate}/>
