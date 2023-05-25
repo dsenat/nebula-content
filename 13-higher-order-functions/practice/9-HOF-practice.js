@@ -21,15 +21,15 @@ const people = [
 ];
 
 function peopleBirthYear(year, peopleArr){
-return peopleArr.filter(person => person.birthYear === year )
+return people.sort((a,b)=>a.birthYear - b.birthYear)
 }
 
 /* Question 3
 Given an array of cars only list cars that are build pre-2000 */
 const cars = [{model: "Dodge", make: 2001},{model:"Ford", make:2012},{model:"Honda", make:1989},{model:"Hondi",make:1990}]
 
-function oldCars(carsArr){
-    return carsArr.filter(car => car.make < 2000)
+function oldCars(arr){
+    return arr.filter(car => car.make < 2000)
 }
 
 /* Question 4
@@ -58,8 +58,8 @@ Given an array of numbers write a HOF that logs to the console:
 const nums1 = [345,57,765,2345,1098,32,9876]
 
 function numberSize(numsArr){
-    numsArray.forEach(num => {
-        if(num > 100){
+    numsArr.forEach(num => {
+        if(num > 1000){
             console.log("That's a big number !")
         }else{
             console.log("This number isn't so big...")
@@ -73,8 +73,8 @@ Given an array of people's names write a hof that returns only people with names
       ["Dan", "Joe", "Samantha", "Jocelyn", "Sasha", "Tim"] => ["Samantha", "Jocelyn", "Sasha"] */
 const peopleArray = ["Dan", "Joe", "Samantha", "Jocelyn", "Sasha", "Tim"]
 
-function longNames(namesArr){
-    return namesArr.filter(name => name.length > 5)
+function longNames(arr){
+    return arr.filter(name => name.length > 5)
 }
 
 /* Question 7
@@ -88,8 +88,8 @@ const people1 = [
     { name: "Tim", age: 25 },
 ];
 
-function ageGroup(peopleArr){
-    return peopleArr.filter(person => person.age >= 20 && person.age <= 35)
+function ageGroup(arr){
+    return arr.filter(person => person.age >= 20 && person.age <= 35)
 }
 
 /* Question 8

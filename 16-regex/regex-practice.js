@@ -20,7 +20,11 @@ function letters(str){
 //      This function should take in a string and a substring to look for 
 //      Input: 'this is a test', 't'
 //      Output: '3'
-
+const instancesOf = (string, substring)=>{
+    /t/gi
+    const regex = new RegExp(substring, "gi" )
+    return string
+}
 
 // 4.   Write a function that checks if all characters in a string are lowercase letters
 function lowerCase(str){
@@ -35,21 +39,24 @@ function lowerCase(str){
     return /^[a-z]+$/.test(str)
 }
 // 5.   Write a function that checks if a string has an uppercase letter
-function uppercase(str){
+function upperCase(str){
 return /[A-Z]/.test(str)
 }
 
 // 6.   Write a function that checks if a string contains a dash or underscore 
 function check(str){
-    return (str.includes("-") || str.includes("_"))
+    return /[-_]/.test(str)
+   
 }
-
 // 7.   Write a function that utilizes regex to check if a string contains '.com' at the end
 function ending(str){
     return /\.com$/.test(str)
 }
 
 // 8.   Write a function that utilizes regex to check if a string contains 'http://' or 'https://' at the beginning
+function httpcheck(str){
+    return 
+}
 
 
 // 9.   Write a function that utilizes regex to indicate if a string's first letter is uppercase or not
